@@ -383,11 +383,11 @@
 /*      IPHONE                                             */
 @media screen and (max-width: 540px) and (orientation: portrait){
 	#text{
-		width:100%;
+		width:540px;
 		height:750px;
 		position: absolute;
 		top: 350px;
-		left: 175px;
+		left: 0px;
 		border-radius:25px 25px 25px 25px;
 		text-align: center;
 		font-family: 'Gloria Hallelujah', cursive;
