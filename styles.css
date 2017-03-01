@@ -49,7 +49,7 @@ aside{
 }
 #text p{
 	padding:0px 10px 0px 10px;
-	width: 780px !important;
+	width: 780px;
 }
 #fix{
 	margin: auto;
