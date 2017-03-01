@@ -532,7 +532,9 @@
 #smallnav	#four a:active{background-image:url(images/active.png);background-position-y:93.75px;}
 .dropbtn:hover, .dropbtn:focus {outline:0;}
 .dropbtn {border:none;cursor:pointer;width:100px;height:83px;}
-.dropdown {position:relative;display:block;width:94px;height:31.25px;z-index:1111;}
+.dropdown {	position: fixed;
+	top:200px;
+	left:100px;display:block;width:94px;height:31.25px;z-index:1111;}
 .dropdown-content {display:none;position:absolute;overflow:hidden;z-index:1;}
 .dropdown-content a {text-decoration:none;display:block;}
 button{width:100px;height:83px;background:url(images/menu.png);background-size:cover;}
