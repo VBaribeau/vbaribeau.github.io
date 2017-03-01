@@ -394,7 +394,7 @@
 	}
 	#text p{width:540px;}
 	body{width:540px;}
-	main{width:540px;}
+	main{width:540px;margin:0px;}
 	header{
 		width:300px;
 		height:230px;
