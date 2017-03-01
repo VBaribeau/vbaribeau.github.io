@@ -1,7 +1,7 @@
 /* Portrait and Landscape */
 @media screen
-  and (device-width: 320px)
-  and (device-height: 640px)
+  and (device-width: 540px)
+  and (device-height: 960px)
   and (-webkit-device-pixel-ratio: 2) {
 		#text{
 			width:100%;
@@ -116,7 +116,7 @@
 		background-image: url(images/inactive.png);
 		background-position-y: 93.75px;
 		}
-		
+
 
 }
 
