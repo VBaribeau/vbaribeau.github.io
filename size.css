@@ -383,10 +383,10 @@
 /*      IPHONE                                             */
 @media screen and (max-width: 540px) and (orientation: portrait){
 	#text{
-		width:540px;
+		width:540px !important;
 		height:750px;
 		position: absolute;
-		top: 350px;
+		top: 300px;
 		left: 0px;
 		border-radius:25px 25px 25px 25px;
 		text-align: left;
