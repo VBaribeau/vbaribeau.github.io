@@ -19,7 +19,40 @@
 </head>
 <body id="h">
 	<div id="banner">
-		<div id="smallnav"><span id="one"><a href="index.html"></a></span><span id="two"><a href="portfolio.html"></a></span><span id="three"><a href="about.html"></a></span><span id="four"><a href="contact.html"></a></span></div>
+		<div class="dropdown">
+		<button onclick="myFunction()" class="dropbtn"></button>
+		  <div id="myDropdown" class="dropdown-content">
+				<div id="smallnav">
+					<span id="one"><a href="index.html"></a></span>
+					<span id="two"><a href="portfolio.html"></a></span>
+					<span id="three"><a href="about.html"></a></span>
+					<span id="four"><a href="contact.html"></a></span>
+				</div>
+		  </div>
+		</div>
+
+		<script>
+		/* When the user clicks on the button,
+		toggle between hiding and showing the dropdown content */
+		function myFunction() {
+		    document.getElementById("myDropdown").classList.toggle("show");
+		}
+
+		// Close the dropdown if the user clicks outside of it
+		window.onclick = function(event) {
+		  if (!event.target.matches('.dropbtn')) {
+
+		    var dropdowns = document.getElementsByClassName("dropdown-content");
+		    var i;
+		    for (i = 0; i < dropdowns.length; i++) {
+		      var openDropdown = dropdowns[i];
+		      if (openDropdown.classList.contains('show')) {
+		        openDropdown.classList.remove('show');
+		      }
+		    }
+		  }
+		}
+		</script>
 	<header></header>
 	<nav>
 		<ul id="menu">
