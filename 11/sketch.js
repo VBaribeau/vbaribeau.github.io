@@ -14,8 +14,8 @@ function preload() {
 //***************************************************
 function setup() {
  createCanvas(windowWidth, windowHeight);
- maxBalls = 50;
- gravity = 0.07;
+ maxBalls = 25;
+ gravity = 0.08;
  timer = 0;
 
  for (var i = 0; i < maxBalls; i++) {
@@ -53,7 +53,7 @@ function Ball() {
   this.posx = random(mouseX - 25, mouseX - 25);
   this.posy = windowHeight;
   this.vx = random(-1, 1);
-  this.vy = random(map(mouseY, 0, windowHeight, -13, -4), -3);
+  this.vy = random(-50, -3);
   this.taille = random(25, 150);
   this.angle = random(0, 360);
   this.vangle = random(-5, 5);
