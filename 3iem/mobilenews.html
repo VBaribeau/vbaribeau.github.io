@@ -17,6 +17,53 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <title>Vincent Baribeau-Home</title>
 </head>
+<style>
+
+	#text{
+		width:500px;
+		height:750px;
+		position: absolute;
+		top: 300px;
+		left: 0px;
+		border-radius:25px 25px 25px 25px;
+		text-align: left;
+		font-family: 'Gloria Hallelujah', cursive;
+	}
+	#text p{width:500px;}
+	body{width:540px;}
+	main{width:540px;margin:0px;}
+	header{
+		width:300px;
+		height:230px;
+		overflow:hidden;
+		border-radius:25px 25px 25px 25px;
+		background: url(images/head.png);
+		background-repeat: no-repeat;
+		background-size: 100%;
+		position: fixed;
+		left: 0px;
+		top:0px;
+	}
+	nav{display:none;}
+	aside{
+		overflow:hidden;
+		position: fixed;
+		top: 200px;
+		width: 75px;
+		height: 250px;
+		left: 10px;
+		z-index:100;
+	}
+	#emily{
+		width:140px;height:140px;
+		background-size: cover;
+		left:275px;
+		top:25px;
+		transform:none;
+	}
+	body{	background: url(images/background2.png);}
+
+</style>
 <body id="h">
 	<div class="dropdown">
 	<button onclick="myFunction()" class="dropbtn"></button>
@@ -31,16 +78,11 @@
 	</div>
 
 	<script>
-	/* When the user clicks on the button,
-	toggle between hiding and showing the dropdown content */
 	function myFunction() {
 			document.getElementById("myDropdown").classList.toggle("show");
 	}
-
-	// Close the dropdown if the user clicks outside of it
 	window.onclick = function(event) {
 		if (!event.target.matches('.dropbtn')) {
-
 			var dropdowns = document.getElementsByClassName("dropdown-content");
 			var i;
 			for (i = 0; i < dropdowns.length; i++) {
@@ -55,14 +97,6 @@
 
 	<div id="banner">
 	<header></header>
-	<nav>
-		<ul id="menu">
-			<li id="news"><a href="index.html"></a></li>
-			<li id="portfolio"><a href="portfolio.html"></a></li>
-			<li id="about"><a href="about.html"></a></li>
-			<li id="contact"><a href="contact.html"></a></li>
-		</ul>
-	</nav>
 	<ul>
 	<aside>
 			<li id="face"><a href="https://www.facebook.com/vincent.baribeau" target="frootloops"></a></li>
@@ -124,3 +158,4 @@
 </main>
 </body>
 </html>
+@media screen and (max-width: 540px) and (orientation: portrait){
