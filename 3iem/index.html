@@ -15,112 +15,44 @@
 <link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad-retina.png">
 <meta name="apple-mobile-web-app-title" content="votre_app">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<title>Vincent Baribeau-Home</title>
+<title>Vincent Baribeau</title>
 </head>
-<body id="h">
-	<div class="dropdown">
-	<button onclick="myFunction()" class="dropbtn"></button>
-		<div id="myDropdown" class="dropdown-content">
-			<div id="smallnav">
-				<span id="one"><a href="index.html"></a></span>
-				<span id="four"><a href="contact.html"></a></span>
-				<span id="three"><a href="about.html"></a></span>
-				<span id="two"><a href="portfolio.html"></a></span>
-			</div>
-		</div>
-	</div>
+<style>
+#pick{
+	width:470px;
+	height:400px;
+	margin-left: auto;
+	margin-right: auto;
+	background: url(images/head.png);
+	background-repeat: no-repeat;
+}
+#pick1{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width:320px;height:225px;
+	background-image: url(images/pick.png);
+	background-position-x: 0px;
+	transform: scale(.75);
+}
+#pick2{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width:320px;height:225px;
+	background-image: url(images/pick.png);
+	background-position-x: 321px;
+	transform: scale(.75);
+}
+</style>
+<body>
 
-	<script>
-	/* When the user clicks on the button,
-	toggle between hiding and showing the dropdown content */
-	function myFunction() {
-			document.getElementById("myDropdown").classList.toggle("show");
-	}
+	<div id="pick"></div>
+	<a href="desktopnews.html"><div id="pick1"></div></a>
+	<a href="mobilenews.html"><div id="pick2"></div></a>
 
-	// Close the dropdown if the user clicks outside of it
-	window.onclick = function(event) {
-		if (!event.target.matches('.dropbtn')) {
+<footer>
+</footer>
 
-			var dropdowns = document.getElementsByClassName("dropdown-content");
-			var i;
-			for (i = 0; i < dropdowns.length; i++) {
-				var openDropdown = dropdowns[i];
-				if (openDropdown.classList.contains('show')) {
-					openDropdown.classList.remove('show');
-				}
-			}
-		}
-	}
-	</script>
-
-	<div id="banner">
-	<header></header>
-	<nav>
-		<ul id="menu">
-			<li id="news"><a href="index.html"></a></li>
-			<li id="portfolio"><a href="portfolio.html"></a></li>
-			<li id="about"><a href="about.html"></a></li>
-			<li id="contact"><a href="contact.html"></a></li>
-		</ul>
-	</nav>
-	<ul>
-	<aside>
-			<li id="face"><a href="https://www.facebook.com/vincent.baribeau" target="frootloops"></a></li>
-			<li id="insta"><a href="https://www.instagram.com/vincentqw/?hl=en" target="frootloops"></a></li>
-			<li id="tube"><a href="https://www.youtube.com/channel/UCAlMeL6BTWiyXmXg_n8_yMw" target="frootloops"></a></li>
-	</aside>
-	</ul>
-	<div id="emily"></div>
-	</div>
-
-<main>
-
-
-<div id="text" class="news">
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere consequat purus, suscipit interdum maur iaculis auctor.
-	Duis ut ex nec sem dictum interdum ac quis risus. Fusce placerat, nulla vitae pharetra commodo, velit eros dignissim nisi, ac efficitur ligula sapien non eros.
-	Sed maximus turpis in interdum porta. Vestibulum amet lorem pretium molestie. Sed euismod dui non nulla sodales tempor.
-	Etiam quis accumsan felis. In scelerisque, enim vel elementum pulvinar, metus eros sollicitudin erat, sit amet commodo eros risus ut quam.
-	Integer blandit ex ante, tincidunt fringilla elit scelerisque sed. Aenean nec risus nec odio egestas feugiat.
-	Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquamtempus et metus et sagittis.
-	Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-	Quisque mollis facilisis ante, sit amet semper erat volutpat ac. Sed sed est vel eros dictum interdum.
-	Sed accumsan efficitur elementum. Suspendisse in pretium enim. Nunc sed ante elementum mi pharetra pharetra vitae at erat.
-	Mauris imperdi ullamconibh consectetur, Morbi id rutrum nibh. In id magna sapien.</p>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere consequat purus, suscipit interdum maur iaculis auctor.
-	Duis ut ex nec sem dictum interdum ac quis risus. Fusce placerat, nulla vitae pharetra commodo, velit eros dignissim nisi, ac efficitur ligula sapien non eros.
-	Sed maximus turpis in interdum porta. Vestibulum amet lorem pretium molestie. Sed euismod dui non nulla sodales tempor.
-	Etiam quis accumsan felis. In scelerisque, enim vel elementum pulvinar, metus eros sollicitudin erat, sit amet commodo eros risus ut quam.
-	Integer blandit ex ante, tincidunt fringilla elit scelerisque sed. Aenean nec risus nec odio egestas feugiat.
-	Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquamtempus et metus et sagittis.
-	Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-	Quisque mollis facilisis ante, sit amet semper erat volutpat ac. Sed sed est vel eros dictum interdum.
-	Sed accumsan efficitur elementum. Suspendisse in pretium enim. Nunc sed ante elementum mi pharetra pharetra vitae at erat.
-	Mauris imperdi ullamconibh consectetur, Morbi id rutrum nibh. In id magna sapien.</p>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere consequat purus, suscipit interdum maur iaculis auctor.
-	Duis ut ex nec sem dictum interdum ac quis risus. Fusce placerat, nulla vitae pharetra commodo, velit eros dignissim nisi, ac efficitur ligula sapien non eros.
-	Sed maximus turpis in interdum porta. Vestibulum amet lorem pretium molestie. Sed euismod dui non nulla sodales tempor.
-	Etiam quis accumsan felis. In scelerisque, enim vel elementum pulvinar, metus eros sollicitudin erat, sit amet commodo eros risus ut quam.
-	Integer blandit ex ante, tincidunt fringilla elit scelerisque sed. Aenean nec risus nec odio egestas feugiat.
-	Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquamtempus et metus et sagittis.
-	Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-	Quisque mollis facilisis ante, sit amet semper erat volutpat ac. Sed sed est vel eros dictum interdum.
-	Sed accumsan efficitur elementum. Suspendisse in pretium enim. Nunc sed ante elementum mi pharetra pharetra vitae at erat.
-	Mauris imperdi ullamconibh consectetur, Morbi id rutrum nibh. In id magna sapien.</p>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere consequat purus, suscipit interdum maur iaculis auctor.
-	Duis ut ex nec sem dictum interdum ac quis risus. Fusce placerat, nulla vitae pharetra commodo, velit eros dignissim nisi, ac efficitur ligula sapien non eros.
-	Sed maximus turpis in interdum porta. Vestibulum amet lorem pretium molestie. Sed euismod dui non nulla sodales tempor.
-	Etiam quis accumsan felis. In scelerisque, enim vel elementum pulvinar, metus eros sollicitudin erat, sit amet commodo eros risus ut quam.
-	Integer blandit ex ante, tincidunt fringilla elit scelerisque sed. Aenean nec risus nec odio egestas feugiat.
-	Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquamtempus et metus et sagittis.
-	Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-	Quisque mollis facilisis ante, sit amet semper erat volutpat ac. Sed sed est vel eros dictum interdum.
-	Sed accumsan efficitur elementum. Suspendisse in pretium enim. Nunc sed ante elementum mi pharetra pharetra vitae at erat.
-	Mauris imperdi ullamconibh consectetur, Morbi id rutrum nibh. In id magna sapien.</p>
-</div>
-<div id="palmtree"></div>
-<div id="printindex"><img src="print/index.jpg" alt="QR code pour le page" height="290px" width="290px"></div>
-<footer></footer>
-</main>
 </body>
 </html>

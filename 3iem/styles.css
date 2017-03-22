@@ -43,10 +43,6 @@ aside{
 	left: 540px;
 	z-index:100;
 }
-#low{
-	position: absolute!important;
-	top: 600px !important;
-}
 #text p{
 	padding:0px 10px 0px 10px;
 	width: 780px;
@@ -65,3 +61,19 @@ p a{
 #printportfolio{display:none;}
 #printabout{display:none;}
 #printcontact{display:none;}
+#sf{
+	width:622px;height:154px;
+	position: fixed;
+	right: 35%;
+	top: 55%;
+	transform: rotate(-10deg);
+}
+#sf:hover{
+	position: fixed;
+	right: 15%;
+	top: 55%;
+	transform: rotate(0deg);
+	z-index: 110;
+	width:1244px;height:308px;
+}
+#sf:hover img{width:1244px;height:308px;}
