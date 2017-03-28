@@ -44,17 +44,6 @@ main{
 	#text p{width:500px;}
 	body{width:540px;}
 	main{width:540px;margin:0px;}
-	header{
-		width:300px;
-		height:230px;
-		overflow:hidden;
-		border-radius:25px 25px 25px 25px;
-		background-repeat: no-repeat;
-		background-size: 100%;
-		position: fixed;
-		left: 0px;
-		top:0px;
-	}
 	#emily{
 		width:140px;height:140px;
 		background-size: cover;
