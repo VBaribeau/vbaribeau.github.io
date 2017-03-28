@@ -62,7 +62,9 @@ main{
 		top:0px;
 		transform:none;
 	}
-	body{	background: url(images/background2.png);}
+	body{
+width: 540px;
+		background: url(images/background2.png);}
 	footer{
 		width:250px;
 		height:106px;
