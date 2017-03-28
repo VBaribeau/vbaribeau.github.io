@@ -151,7 +151,7 @@ width: 540px;
 		#smallnav{
 			left:0px;
 			display:block;
-			position:relative;
+			position:fixed;
 			width:200px;height:150px;
 			z-index:1000;
 		}
