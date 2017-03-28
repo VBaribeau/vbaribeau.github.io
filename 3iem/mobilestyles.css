@@ -149,7 +149,7 @@ width: 540px;
 		background-image: url(images/media.png);
 		}
 		#smallnav{
-			left:0px;
+			left:-50px;
 			display:block;
 			position:fixed;
 			width:200px;height:150px;
