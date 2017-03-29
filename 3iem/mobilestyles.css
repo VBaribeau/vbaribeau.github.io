@@ -149,9 +149,7 @@ width: 540px;
 		background-image: url(images/media.png);
 		}
 		#smallnav{
-			left:-50px;
 			display:block;
-			position:fixed;
 			width:200px;height:150px;
 			z-index:1000;
 		}
@@ -183,7 +181,7 @@ width: 540px;
 		.dropbtn {border:none;cursor:pointer;width:100px;height:83px;}
 		.dropdown {	position: fixed;
 			top:200px;
-			left:100px;display:block;width:94px;height:31.25px;z-index:1111;}
+			left:0px;display:block;width:94px;height:31.25px;z-index:1111;}
 		.dropdown-content {display:none;position:absolute;overflow:hidden;z-index:1;}
 		.dropdown-content a {text-decoration:none;display:block;}
 		button{width:100px;height:83px;background:url(images/menu.png);background-size:cover;}
