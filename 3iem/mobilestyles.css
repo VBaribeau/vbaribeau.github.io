@@ -63,8 +63,11 @@ main{
 		transform:none;
 	}
 	body{
-width: 540px;
-		background: url(images/background2.jpg);}
+		width: 540px;
+		background: url(images/background2.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
 	footer{
 		width:250px;
 		height:106px;
