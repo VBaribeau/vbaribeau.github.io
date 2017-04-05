@@ -1,5 +1,5 @@
 #banner{
-	background: url(images/background2.jpg);
+	background: url(images/mobilebg.jpg);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -10,11 +10,13 @@
 	left:0px;
 	top:0px;
 }
-
-
+body{
+	width: 540px;
+	background: url(images/mobilebg.jpg);
+	background-repeat:repeat-y;
+	background-size: cover;
+}
 header{
-	width:400px;
-	height:330px;
 	overflow:hidden;
 	border-radius:25px 25px 25px 25px;
 	background: url(images/head.png);
@@ -23,14 +25,18 @@ header{
 	position: fixed;
 	left: 0px;
 	top:0px;
+	width:300px;
+	height:230px;
 }
+
 main{
 	margin-top: 340px;
 	max-height: 100vh;
 	position: fixed;
 	top: 0px;
-	width: 800px;
-}
+width:540px;
+margin:0px;}
+
 #text{
 	width:500px;
 	height:750px;
@@ -40,9 +46,6 @@ main{
 	border-radius:25px 25px 25px 25px;
 	text-align: left;
 	font-family: 'Gloria Hallelujah', cursive;
-	background: url(images/green.png);
-	background-repeat: no-repeat;
-	background-size: cover;
 
 }
 
@@ -51,19 +54,6 @@ main{
 		text-align: center;
 		font-family: 'Gloria Hallelujah', cursive;
 }
-	body{width:540px;}
-	main{width:540px;margin:0px;}
-	header{
-		width:300px;
-		height:230px;
-		overflow:hidden;
-		border-radius:25px 25px 25px 25px;
-		background-repeat: no-repeat;
-		background-size: 100%;
-		position: fixed;
-		left: 0px;
-		top:0px;
-	}
 	.contact{
 		text-align: center !important;
 		width:250px;
@@ -75,12 +65,6 @@ main{
 		left:355px;
 		top:0px;
 		transform:none;
-	}
-	body{
-		width: 540px;
-		background: url(images/background2.jpg);
-		background-repeat:repeat-y;
-		background-size: cover;
 	}
 	footer{
 		width:250px;
@@ -178,22 +162,22 @@ main{
 			width:94px;height:31.25px;
 			display:block;
 			overflow:hidden;}
-		#smallnav #one a:link{background-image:url(images/active.png);background-position-y:0px;}
-		#smallnav #one a:visited{background-image:url(images/active.png);background-position-y:0px;}
-		#smallnav #one a:hover{background-image:url(images/active.png);background-position-y:0px;}
-		#smallnav	#one a:active{background-image:url(images/active.png);background-position-y:0px;}
-		#smallnav #two a:link{background-image:url(images/active.png);background-position-y:31.25px;}
-		#smallnav #two a:visited{background-image:url(images/active.png);background-position-y:31.25px;}
-		#smallnav #two a:hover{background-image:url(images/active.png);background-position-y:31.25px;}
-		#smallnav	#two a:active{background-image:url(images/active.png);background-position-y:31.25px;}
-		#smallnav #three a:link{background-image:url(images/active.png);background-position-y:62.5px;}
-		#smallnav #three a:visited{background-image:url(images/active.png);background-position-y:62.5px;}
-		#smallnav #three a:hover{background-image: url(images/active.png);background-position-y: 62.5px;}
-		#smallnav	#three a:active{background-image:url(images/active.png);background-position-y:62.5px;}
-		#smallnav #four a:link{background-image: url(images/active.png);background-position-y:93.75px;}
-		#smallnav #four a:visited{background-image:url(images/active.png);background-position-y:93.75px;}
-		#smallnav #four a:hover{background-image:url(images/active.png);background-position-y:93.75px;}
-		#smallnav	#four a:active{background-image:url(images/active.png);background-position-y:93.75px;}
+		#smallnav #one a:link{background-image:url(images/news.png);}
+		#smallnav #one a:visited{background-image:url(images/news.png);}
+		#smallnav #one a:hover{background-image:url(images/news.png);}
+		#smallnav	#one a:active{background-image:url(images/news.png);}
+		#smallnav #two a:link{background-image:url(images/portfolio.png);}
+		#smallnav #two a:visited{background-image:url(images/portfolio.png);}
+		#smallnav #two a:hover{background-image:url(images/portfolio.png);}
+		#smallnav	#two a:active{background-image:url(images/portfolio.png);}
+		#smallnav #three a:link{background-image:url(images/about.png);}
+		#smallnav #three a:visited{background-image:url(images/about.png);}
+		#smallnav #three a:hover{background-image: url(images/about.png);}
+		#smallnav	#three a:active{background-image:url(images/about.png);}
+		#smallnav #four a:link{background-image: url(images/contact.png);}
+		#smallnav #four a:visited{background-image:url(images/contact.png);}
+		#smallnav #four a:hover{background-image:url(images/contact.png);}
+		#smallnav	#four a:active{background-image:url(images/contact.png);}
 		.dropbtn:hover, .dropbtn:focus {outline:0;}
 		.dropbtn {border:none;cursor:pointer;width:100px;height:83px;}
 		.dropdown {	position: fixed;
