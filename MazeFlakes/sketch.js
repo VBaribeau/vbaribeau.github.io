@@ -13,7 +13,7 @@ function setup() {
  retry = false;
  victory = false;
  gameSize = 36;
- gameTileSize = 25;
+ gameTileSize = 10;
  posI = 1;
  posJ = 1;
  VI = +1;
