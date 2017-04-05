@@ -263,7 +263,18 @@ function keyReleased() {
   default:
    break;
  }
-
+}
+function goLeft(){
+   NextPosition(posI, posJ - 1);
+}
+function goRight(){
+   NextPosition(posI, posJ + 1);
+}
+function goUp(){
+   NextPosition(posI - 1, posJ);
+}
+function goDown(){
+   NextPosition(posI + 1, posJ);
 }
 /******************************************************************************/
 function NextPosition(NextI, NextJ) {

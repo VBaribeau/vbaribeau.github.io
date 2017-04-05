@@ -1,17 +1,86 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>MazeFlakes</title>
-    <script src="libraries/p5.js" type="text/javascript"></script>
 
-    <script src="libraries/p5.dom.js" type="text/javascript"></script>
-    <script src="libraries/p5.sound.js" type="text/javascript"></script>
+<head>
+ <meta charset="UTF-8">
+ <title>MazeFlakes</title>
+ <script src="libraries/p5.js" type="text/javascript"></script>
 
-    <script src="sketch.js" type="text/javascript"></script>
+ <script src="libraries/p5.dom.js" type="text/javascript"></script>
+ <script src="libraries/p5.sound.js" type="text/javascript"></script>
 
-    <style> body {padding: 0; margin: 0;} canvas {vertical-align: top;} </style>
-  </head>
-  <body>
-  </body>
+ <script src="sketch.js" type="text/javascript"></script>
+
+ <style>
+  body {
+   padding: 0;
+   margin: 0;
+  }
+  
+  canvas {
+   vertical-align: top;
+  }
+  
+  #LEFT {
+   width: 100px;
+   height: 75px;
+   display: block;
+   background-color: #F0F;
+   position: absolute;
+   bottom: 0px;
+   left: 0px;
+  }
+  
+  #RIGHT {
+   width: 100px;
+   height: 75px;
+   display: block;
+   background-color: #F0F;
+   position: absolute;
+   bottom: 0px;
+   left: 200px;
+  }
+  
+  #UP {
+   width: 100px;
+   height: 75px;
+   display: block;
+   background-color: #F0F;
+   position: absolute;
+   bottom: 75px;
+   left: 100px;
+  }
+  
+  #DOWN {
+   width: 100px;
+   height: 75px;
+   display: block;
+   background-color: #F0F;
+   position: absolute;
+   bottom: 0px;
+   left: 100px;
+  }
+  
+  #Keys {
+   width: 300px;
+   height: 150px;
+   position: absolute;
+   bottom: 50px;
+   left: calc(50% - 150px);
+   font-size: 30px;
+   text-align: center;
+   font-family: impact;
+  }
+ </style>
+</head>
+
+<body>
+ <div id="Keys">
+  <div id="LEFT" onclick="goLeft()">Left</div>
+  <div id="RIGHT" onclick="goRight()">Right</div>
+  <div id="UP" onclick="goUp()">Up</div>
+  <div id="DOWN" onclick="goDown()">Down</div>
+ </div>
+</body>
+
 </html>
