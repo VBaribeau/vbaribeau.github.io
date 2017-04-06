@@ -4,7 +4,7 @@ var gameSize, gameTileSize;
 var nbtrace, traceTimer, traces = [];
 var retry, retryTimer, victory, victoryTimer;
 var wallColor, tp1, tp2, tp3;
-var offset;
+var offset, timerSpeed;
 /******************************************************************************/
 
 function setup() {
@@ -17,10 +17,12 @@ function setup() {
   createCanvas(windowWidth, (windowHeight / 3 * 2));
   gameTileSize = (windowHeight / 3 * 2) / 36;
   offset = (windowWidth - (windowHeight / 3 * 2)) / 2;
+  timerSpeed = 21;
  } else {
   createCanvas(windowWidth, (windowHeight));
   gameTileSize = windowWidth / 36;
   offset = 0;
+  timerSpeed = 10;
  }
  posI = 1;
  posJ = 1;
@@ -163,7 +165,7 @@ function draw() {
     retry = true;
     retryTimer = 40;
    }
-   traceTimer = (21 - nbtrace);
+   traceTimer = (timerSpeed - nbtrace);
   }
  }
  traceTimer--;
