@@ -13,12 +13,14 @@ function setup() {
  retry = false;
  victory = false;
  gameSize = 36;
- if (windowWidth > 500) {
+ if (windowWidth > 800) {
   createCanvas(windowWidth, (windowHeight / 3 * 2));
   gameTileSize = (windowHeight / 3 * 2) / 36;
+  offset = (windowWidth - (windowHeight / 3 * 2)) / 2;
  } else {
   createCanvas(windowWidth, (windowHeight));
   gameTileSize = windowWidth / 36;
+  offset = 0;
  }
  posI = 1;
  posJ = 1;
@@ -29,7 +31,6 @@ function setup() {
  tp1 = 199;
  tp2 = 0;
  tp3 = 57;
- offset = (windowWidth - (windowHeight / 3 * 2)) / 2;
  /******************************************************************************/
  game = [
   "W", "W", "W", "W", "W", "W", "W", "W", "W", "W", "W", "W", "W", "W", "W", "W", "W", "W", "W", "W", "W", "W", "W", "W", "W", "W", "W", "W", "W", "W", "W", "W", "W", "W", "W", "W",
