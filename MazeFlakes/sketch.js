@@ -14,7 +14,11 @@ function setup() {
  retry = false;
  victory = false;
  gameSize = 36;
- gameTileSize = (windowHeight / 3 * 2) / 36;
+ if (windowWidth > 500) {
+  gameTileSize = (windowHeight / 3 * 2) / 36;
+ } else {
+  gameTileSize = windowWidth / 36;
+ }
  posI = 1;
  posJ = 1;
  VI = +1;
@@ -70,7 +74,7 @@ function setup() {
 }
 /******************************************************************************/
 function draw() {
- background(0);
+ background(1, 1, 1);
  noStroke();
  strokeWeight(0);
  for (i = 0; i < gameSize; i++) {
@@ -170,11 +174,11 @@ function Victory() {
  fill(0);
  textFont("impact");
  textAlign(CENTER);
- text("VICTORY", windowWidth / 2, windowHeight / 2);
+ text("VICTORY", windowWidth / 2, (windowHeight / 3));
  textSize(50);
- text("CMD+R", windowWidth / 2, windowHeight / 2 + 50);
+ text("CMD+R", windowWidth / 2, windowHeight / 3 + 50);
  textSize(25);
- text("to restart", windowWidth / 2, windowHeight / 2 + 75);
+ text("to restart", windowWidth / 2, windowHeight / 3 + 75);
 }
 /******************************************************************************/
 function Retry() {
@@ -184,7 +188,7 @@ function Retry() {
  fill(0);
  textFont("impact");
  textAlign(CENTER);
- text("TRY AGAIN", windowWidth / 2, windowHeight / 2);
+ text("TRY AGAIN", windowWidth / 2, (windowHeight / 3));
  posI = 1;
  posJ = 1;
  if (retryTimer === 0) {
