@@ -4,16 +4,17 @@ var gameSize, gameTileSize;
 var nbtrace, traceTimer, traces = [];
 var retry, retryTimer, victory, victoryTimer;
 var wallColor, tp1, tp2, tp3;
+var offset;
 /******************************************************************************/
 
 function setup() {
- createCanvas((windowHeight/3*2), (windowHeight/3*2));
+ createCanvas(windowWidth, (windowHeight / 3 * 2));
  rectMode(CENTER);
  ellipseMode(CENTER);
  retry = false;
  victory = false;
  gameSize = 36;
- gameTileSize = (windowHeight/3*2) / 36;
+ gameTileSize = (windowHeight / 3 * 2) / 36;
  posI = 1;
  posJ = 1;
  VI = +1;
@@ -23,6 +24,7 @@ function setup() {
  tp1 = 199;
  tp2 = 0;
  tp3 = 57;
+ offset = (windowWidth - (windowHeight / 3 * 2)) / 2;
  /******************************************************************************/
  game = [
   "W", "W", "W", "W", "W", "W", "W", "W", "W", "W", "W", "W", "W", "W", "W", "W", "W", "W", "W", "W", "W", "W", "W", "W", "W", "W", "W", "W", "W", "W", "W", "W", "W", "W", "W", "W",
@@ -124,7 +126,7 @@ function draw() {
      break;
 
    }
-   rect(j * gameTileSize, i * gameTileSize, gameTileSize, gameTileSize);
+   rect(j * gameTileSize + offset, i * gameTileSize, gameTileSize, gameTileSize);
   }
  }
  Lamp(posI, posJ - 1);
@@ -133,7 +135,7 @@ function draw() {
  Lamp(posI + 1, posJ);
 
  fill(255, 87, 51);
- ellipse(posJ * gameTileSize, posI * gameTileSize, playerSize);
+ ellipse(posJ * gameTileSize + offset, posI * gameTileSize, playerSize);
 
  if (retry === true) {
   Retry();
@@ -242,7 +244,7 @@ function Lamp(i, j) {
    break;
 
  }
- rect(j * gameTileSize, i * gameTileSize, gameTileSize, gameTileSize);
+ rect(j * gameTileSize + offset, i * gameTileSize, gameTileSize, gameTileSize);
 
 }
 /******************************************************************************/
