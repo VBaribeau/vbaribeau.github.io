@@ -8,15 +8,16 @@ var offset;
 /******************************************************************************/
 
 function setup() {
- createCanvas(windowWidth, (windowHeight / 3 * 2));
  rectMode(CENTER);
  ellipseMode(CENTER);
  retry = false;
  victory = false;
  gameSize = 36;
  if (windowWidth > 500) {
+  createCanvas(windowWidth, (windowHeight / 3 * 2));
   gameTileSize = (windowHeight / 3 * 2) / 36;
  } else {
+  createCanvas(windowWidth, (windowHeight));
   gameTileSize = windowWidth / 36;
  }
  posI = 1;
