@@ -7,7 +7,7 @@ var wallColor, tp1, tp2, tp3;
 /******************************************************************************/
 
 function setup() {
- createCanvas(windowWidth, windowHeight);
+ createCanvas((windowHeight/3*2), (windowHeight/3*2));
  rectMode(CENTER);
  ellipseMode(CENTER);
  retry = false;
