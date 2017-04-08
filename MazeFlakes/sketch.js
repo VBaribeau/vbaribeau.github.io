@@ -22,7 +22,7 @@ function setup() {
   createCanvas(windowWidth, (windowHeight));
   gameTileSize = windowWidth / 36;
   offset = 0;
-  timerSpeed = 10;
+  timerSpeed = 15;
  }
  posI = 1;
  posJ = 1;
