@@ -1,10 +1,7 @@
 #banner{
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-size: cover;
 	height: 325px;
 	width: 100%;
-	position:fixed;
+	position:absolute;
 	z-index: 1;
 	left:0px;
 	top:0px;
@@ -22,7 +19,7 @@ header{
 	background: url(images/head.png);
 	background-repeat: no-repeat;
 	background-size: 100%;
-	position: fixed;
+	position: absolute;
 	left: 0px;
 	top:0px;
 	width:300px;
@@ -34,7 +31,13 @@ main{
 	max-height: 100%;
 width:540px;
 margin:0px;}
-
+#car{position: absolute;
+	left: 230px;
+	top: 0px;
+}
+#lemon{position: absolute;top: 200px;
+	left: 230px;
+}
 #text{
 	width:100%;
 	height:auto;
@@ -74,9 +77,15 @@ margin:0px;}
 		background-repeat: no-repeat;
 
 	}
+	#Pictures{
+		position: absolute;
+		left: 0px;
+		top: 300px;
+		width: 630px;
+	}
 	aside{
 		overflow:hidden;
-		position: fixed;
+		position: absolute;
 		top: 25px;
 		width: 75px;
 		height: 250px;
@@ -178,7 +187,7 @@ margin:0px;}
 		#smallnav	#four a:active{background-image:url(images/contact.png);}
 		.dropbtn:hover, .dropbtn:focus {outline:0;}
 		.dropbtn {border:none;cursor:pointer;width:100px;height:83px;}
-		.dropdown {	position: fixed;
+		.dropdown {	position: absolute;
 			top:200px;
 			left:0px;display:block;width:94px;height:31.25px;z-index:1111;}
 		.dropdown-content {display:none;position:absolute;overflow:hidden;z-index:1;}
