@@ -1,5 +1,4 @@
 #banner{
-	background: url(images/mobilebg.jpg);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -13,8 +12,9 @@
 body{
 	width: 540px;
 	background: url(images/mobilebg.jpg);
-	background-repeat:repeat-y;
 	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 header{
 	overflow:hidden;
@@ -31,17 +31,15 @@ header{
 
 main{
 	margin-top: 340px;
-	max-height: 100vh;
-	position: fixed;
-	top: 0px;
+	max-height: 100%;
 width:540px;
 margin:0px;}
 
 #text{
-	width:500px;
-	height:750px;
+	width:100%;
+	height:auto;
 	position: absolute;
-	top: 300px;
+	top: 320px;
 	left: 0px;
 	border-radius:25px 25px 25px 25px;
 	text-align: left;
