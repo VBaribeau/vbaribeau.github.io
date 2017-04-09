@@ -8,6 +8,7 @@
 }
 body{
 	width: 540px;
+	height: auto;
 	background: url(images/mobilebg.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -32,11 +33,11 @@ main{
 width:540px;
 margin:0px;}
 #car{position: absolute;
-	left: 230px;
+	left: 210px;
 	top: 0px;
 }
 #lemon{position: absolute;top: 200px;
-	left: 230px;
+	left: 210px;
 }
 #text{
 	width:100%;
@@ -81,7 +82,7 @@ margin:0px;}
 		position: absolute;
 		left: 0px;
 		top: 300px;
-		width: 630px;
+		width: 500px;
 	}
 	aside{
 		overflow:hidden;
