@@ -86,6 +86,8 @@ function draw() {
    switch (game[i * gameSize + j]) {
     case "W":
      fill(wallColor);
+     strokeWeight(1);
+     stroke(50);
      break;
     case "F":
      fill(wallColor);
