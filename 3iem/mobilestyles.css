@@ -39,6 +39,7 @@ margin:0px;}
 	width:100%;
 	height:auto;
 	margin-top: 320px;
+	margin-left: 0px;
 	border-radius:25px 25px 25px 25px;
 	text-align: left;
 	font-family: 'Gloria Hallelujah', cursive;
@@ -63,6 +64,7 @@ margin:0px;}
 	footer{
 		width:250px;
 		height:106px;
+		margin-left: 0px;
 		background: url(images/footer5.png);
 		background-repeat: no-repeat;
 
