@@ -38,9 +38,7 @@ margin:0px;}
 #text{
 	width:100%;
 	height:auto;
-	position: absolute;
-	top: 320px;
-	left: 0px;
+	margin-top: 320px;
 	border-radius:25px 25px 25px 25px;
 	text-align: left;
 	font-family: 'Gloria Hallelujah', cursive;
