@@ -65,8 +65,8 @@ margin:0px;}
 	footer{
 		width:250px;
 		height:106px;
-		position: abosolute;
-		bottom: 90%;
+		position: absolute;
+		bottom: -25px;
 		left: 0px;
 		background: url(images/footer5.png);
 		background-repeat: no-repeat;
