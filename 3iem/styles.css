@@ -62,7 +62,7 @@ p a{
 #printabout{display:none;}
 #printcontact{display:none;}
 #sf{
-	width:622px;height:154px;
+	width:622px;height:227px;
 	position: fixed;
 	right: 35%;
 	top: 55%;
@@ -74,6 +74,6 @@ p a{
 	top: 55%;
 	transform: rotate(0deg);
 	z-index: 110;
-	width:1244px;height:308px;
+	width:1250px;height:456px;
 }
-#sf:hover img{width:1244px;height:308px;}
+#sf:hover img{width:1250px;height:456px;}
