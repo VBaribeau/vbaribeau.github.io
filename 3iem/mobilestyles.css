@@ -51,8 +51,6 @@ margin:0px;}
 }
 	.contact{
 		text-align: center !important;
-		width:250px;
-		overflow: hidden;
 	}
 	#emily{
 		width:140px;height:140px;
@@ -68,6 +66,9 @@ margin:0px;}
 		background: url(images/footer5.png);
 		background-repeat: no-repeat;
 
+	}
+	#annoy{
+		margin-top: 1150px;
 	}
 	#Pictures{
 		position: absolute;

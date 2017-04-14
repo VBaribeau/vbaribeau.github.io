@@ -41,7 +41,7 @@
 				transform: rotate(0deg);
 				position:absolute;
 				right: calc( 50% - 500px );
-				top: 775px;
+				top: 825px;
 				z-index: 110;
 			}
 			#generations:hover img{width:1000px;height:308px;}
@@ -231,7 +231,22 @@
 		.h #text {
 			width: 75%;
 		}
-
+		#sf{
+			width:622px;height:227px;
+			position: fixed;
+			right: 35%;
+			top: 55%;
+			transform: rotate(-10deg);
+		}
+		#sf:hover{
+			position: fixed;
+			right: 15%;
+			top: 55%;
+			transform: rotate(0deg);
+			z-index: 110;
+			width:750px;height:auto;
+		}
+		#sf:hover img{width:750px;height:auto;}
 }
 @media screen and (max-width: 800px) and (min-device-width: 1024px){
 	header{
@@ -391,6 +406,22 @@
 			}
 			.c #text {left: 50px;width: 150px !important;}
 			#smallnav{display:none;}
+			#sf{
+				width:622px;height:227px;
+				position: fixed;
+				right: 35%;
+				top: 75%;
+				transform: rotate(0deg);
+			}
+			#sf:hover{
+				width:622px;height:227px;
+				position: fixed;
+				right: 35%;
+				top: 75%;
+				transform: rotate(0deg);
+			}
+			#sf:hover img{				width:622px;height:227px;
+}
 
 }
 /***********************************************************/
