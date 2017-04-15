@@ -479,12 +479,19 @@ button{width:100px;height:83px;background:url(images/menu.png);background-size:c
 	font-size: 14px;
 	color: #000;
   }
-	#printindex{display:block;}
-	#printportfolio{display:block;float:right;margin-top:0px;}
-	#printabout{display:block;}
-	#printcontact{display:block;}
+	#printHome{display:block;}
+	#printDN{display:block;}
+	#printDP{display:block;}
+	#printDC{display:block;}
+	#printDA{display:block;}
 	#palmtree{display:none;}
 	header{display:none;}
 	#banner{display:none;}
 }
+#printHome{display:none;}
+#printDN{display:none;}
+#printDP{display:none;}
+#printDC{display:none;}
+#printDA{display:none;}
+
 /***********************************************************/

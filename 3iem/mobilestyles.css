@@ -202,3 +202,15 @@ margin:0px;}
 			list-style: none;
 			display: block;
 		}
+		#printMN{display:none;}
+		#printMP{display:none;}
+		#printMC{display:none;}
+		#printMA{display:none;}
+		@media only print {
+		#printMN{display:block;}
+		#printMP{display:block;}
+		#printMC{display:block;}
+		#printMA{display:block;}
+		#Background{display:none;}
+		#banner{display:none;}
+}
