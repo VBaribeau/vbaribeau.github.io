@@ -5,7 +5,6 @@ document.ontouchmove = function(event) {
 function setup() {
 	createCanvas(windowWidth, windowHeight);
 
-	dummyMax = random(4, 8);
 	rectMode(CENTER);
 	stroke(0);
 	strokeWeight(5);
@@ -27,7 +26,7 @@ function draw() {
 		strokeWeight(1);
 		fill(0);
 		textSize(20);
-		text("X=" + floor(touches[i].x) + ",Y=" + floor(touches[i].y), touches[i].x + 100, touches[i].y);
+		text("X=" + floor(touches[i].x) + ",Y=" + floor(touches[i].y), touches[i].x + 75, touches[i].y);
 
 	}
 }
