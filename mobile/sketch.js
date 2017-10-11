@@ -1,6 +1,6 @@
 document.ontouchmove = function(event) {
 	event.preventDefault();
-
+	var iSize;
 }
 
 function setup() {
@@ -16,8 +16,8 @@ function draw() {
 	beginShape();
 	for (var i = 0; i < touches.length; i++) {
 		textSize(40);
-		text(touches[i].x, 100, 100);
-		text(touches[i].y, 200, 100);
+		text(touches[i].x, touches[i].x, touches[i].y);
+		text(touches[i].y, touches[i].x + 100, touches[i].y);
 		vertex(touches[i].x, touches[i].y);
 	}
 	endShape(CLOSE);
