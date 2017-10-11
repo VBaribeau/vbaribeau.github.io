@@ -24,8 +24,8 @@ function draw() {
 		strokeWeight(1);
 		fill(0);
 		textSize(25);
-		text(touches[i].x, floor(touches[i].x), floor(touches[i].y));
-		text(touches[i].y, floor(touches[i].x) + 100, floor(touches[i].y));
+		text(floor(touches[i].x), touches[i].x, touches[i].y);
+		text(floor(touches[i].y), touches[i].x + 100, touches[i].y);
 
 	}
 }
