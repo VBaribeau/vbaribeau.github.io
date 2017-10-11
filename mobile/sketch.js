@@ -4,9 +4,12 @@ document.ontouchmove = function(event) {
 
 function setup() {
 	createCanvas(windowWidth, windowHeight);
+
+	dummyMax = random(4, 8);
 	rectMode(CENTER);
 	stroke(0);
 	strokeWeight(5);
+
 }
 
 function draw() {
@@ -19,13 +22,12 @@ function draw() {
 	endShape(CLOSE);
 	for (i = 0; i < touches.length; i++) {
 		strokeWeight(5);
-		fill(175, 0, 100);
+		fill(175, 255, 100);
 		ellipse(touches[i].x, touches[i].y, 50, 50);
 		strokeWeight(1);
 		fill(0);
-		textSize(25);
-		text(floor(touches[i].x), touches[i].x, touches[i].y);
-		text(floor(touches[i].y), touches[i].x + 100, touches[i].y);
+		textSize(20);
+		text("X=" + floor(touches[i].x) + ",Y=" + floor(touches[i].y), touches[i].x + 100, touches[i].y);
 
 	}
 }
