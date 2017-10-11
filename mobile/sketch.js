@@ -12,12 +12,13 @@ function setup() {
 
 function draw() {
 	background(255);
-	fill(100, 200, 100);
 	beginShape();
 	for (var i = 0; i < touches.length; i++) {
-		textSize(40);
+		fill(0);
+		textSize(25);
 		text(touches[i].x, touches[i].x, touches[i].y);
 		text(touches[i].y, touches[i].x + 100, touches[i].y);
+		fill(100, 200, 100);
 		vertex(touches[i].x, touches[i].y);
 	}
 	endShape(CLOSE);
