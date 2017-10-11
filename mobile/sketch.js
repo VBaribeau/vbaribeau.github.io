@@ -19,8 +19,8 @@ function draw() {
 	}
 	endShape(CLOSE);
 	fill(175, 255, 100);
-	for (var j = 0; j < touches.length; j++) {
-		ellipse(touches[j].x, touches[j].y, 50, 50);
+	for (i = 0; i < touches.length; i++) {
+		ellipse(touches[i].x, touches[i].y, 50, 50);
 		strokeWeight(1);
 		fill(0);
 		textSize(25);
