@@ -19,7 +19,7 @@ function draw() {
 	endShape(CLOSE);
 	for (i = 0; i < touches.length; i++) {
 		strokeWeight(5);
-		fill(175, 255, 100);
+		fill(175, 0, 100);
 		ellipse(touches[i].x, touches[i].y, 50, 50);
 		strokeWeight(1);
 		fill(0);
