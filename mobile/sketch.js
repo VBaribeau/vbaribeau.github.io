@@ -1,6 +1,5 @@
 document.ontouchmove = function(event) {
 	event.preventDefault();
-	var iSize;
 }
 
 function setup() {
@@ -18,8 +17,9 @@ function draw() {
 		vertex(touches[i].x, touches[i].y);
 	}
 	endShape(CLOSE);
-	fill(175, 255, 100);
 	for (i = 0; i < touches.length; i++) {
+		strokeWeight(5);
+		fill(175, 255, 100);
 		ellipse(touches[i].x, touches[i].y, 50, 50);
 		strokeWeight(1);
 		fill(0);
