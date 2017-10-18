@@ -15,16 +15,15 @@ function setup() {
 
 function draw() {
 	background(255, 0, value);
-	textSize(40);
-	text("Rx: " + rotationX, 100, 100);
-	text("Ry: " + rotationY, 100, 150);
-	text("Rz: " + rotationZ, 100, 200);
-	text("Test2.2", 100, 250);
+	textSize(15);
+	text("Test2.3", 10, 15);
+	text("Rx: " + rotationX, 10, 30);
+	text("Ry: " + rotationY, 10, 45);
+	text("Rz: " + rotationZ, 10, 60);
 	Marble();
 }
 
 function Marble() {
-	fill(150);
 	vMultiplier = 0.05;
 	ax = rotationY * vMultiplier;
 	vx += ax;
@@ -32,6 +31,7 @@ function Marble() {
 	ay = rotationX * vMultiplier;
 	vy += ay;
 	py += vy;
+	fill(150);
 	ellipse(px, py, s, s);
 	fill(100);
 	ellipse(px - 15, py - 15, s / 2, s / 2);
@@ -58,6 +58,6 @@ function Marble() {
 function deviceShaken() {
 	value = value + 5;
 	if (value > 255) {
-		value = 0;
+		value = 75;
 	}
 }
