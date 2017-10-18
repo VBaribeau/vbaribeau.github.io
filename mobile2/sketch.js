@@ -37,5 +37,9 @@ function Marble() {
 		vx = 0;
 	} else if (py <= windowHeight - s1 / 2) {
 		vy = 0;
+	} else if (px >= 0 + s1 / 2) {
+		vx = 0;
+	} else if (py >= 0 + s1 / 2) {
+		vy = 0;
 	}
 }
