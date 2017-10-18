@@ -1,4 +1,5 @@
 var ax, ay, vx, vy, px, py, vMultiplier, s;
+var value;
 
 function setup() {
 	createCanvas(windowWidth, windowHeight);
@@ -9,15 +10,16 @@ function setup() {
 	px = windowWidth / 2;
 	py = windowHeight / 2;
 	s = 100;
+	value = 0;
 }
 
 function draw() {
-	background(255);
+	background(255, 0, value);
 	textSize(40);
 	text("Rx: " + rotationX, 100, 100);
 	text("Ry: " + rotationY, 100, 150);
 	text("Rz: " + rotationZ, 100, 200);
-	text("Test2.1", 100, 250);
+	text("Test2.2", 100, 250);
 	Marble();
 }
 
@@ -50,5 +52,12 @@ function Marble() {
 	if (py < 0 + s / 2) {
 		py = 0 + s / 2;
 		vy = -vy * 0.5;
+	}
+}
+
+function deviceShaken() {
+	value = value + 5;
+	if (value > 255) {
+		value = 0;
 	}
 }
