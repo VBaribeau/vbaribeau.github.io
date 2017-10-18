@@ -17,13 +17,13 @@ function draw() {
 	text("Rx: " + rotationX, 100, 100);
 	text("Ry: " + rotationY, 100, 150);
 	text("Rz: " + rotationZ, 100, 200);
-	text("Test2.0", 100, 250);
+	text("Test2.1", 100, 250);
 	Marble();
 }
 
 function Marble() {
 	fill(150);
-	vMultiplier = 0.01;
+	vMultiplier = 0.05;
 	ax = rotationY * vMultiplier;
 	vx += ax;
 	px += vx;
