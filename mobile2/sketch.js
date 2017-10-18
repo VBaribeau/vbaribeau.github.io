@@ -1,4 +1,4 @@
-var ax, ay, vx, vy, px, py, vMultiplier, s;
+var ax, ay, vx, vy, px, py, vMultiplier, s, g;
 var value;
 
 function setup() {
@@ -10,7 +10,8 @@ function setup() {
 	px = windowWidth / 2;
 	py = windowHeight / 2;
 	s = 100;
-	value = 0;
+	g = 0.3;
+	value = 75;
 }
 
 function draw() {
@@ -39,24 +40,24 @@ function Marble() {
 	ellipse(px + 25, py + 25, s / 4, s / 4);
 	if (px > windowWidth - s / 2) {
 		px = windowWidth - s / 2;
-		vx = -vx * 0.5;
+		vx = -vx * g;
 	}
 	if (px < 0 + s / 2) {
 		px = 0 + s / 2;
-		vx = -vx * 0.5;
+		vx = -vx * g;
 	}
 	if (py > windowHeight - s / 2) {
 		py = windowHeight - s / 2;
-		vy = -vy * 0.5;
+		vy = -vy * g;
 	}
 	if (py < 0 + s / 2) {
 		py = 0 + s / 2;
-		vy = -vy * 0.5;
+		vy = -vy * g;
 	}
 }
 
 function deviceShaken() {
-	value = value + 5;
+	value = value + 1;
 	if (value > 255) {
 		value = 75;
 	}
