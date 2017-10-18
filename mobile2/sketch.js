@@ -33,13 +33,16 @@ function Marble() {
 	ellipse(px, py, s1, s1);
 	fill(100);
 	ellipse(px - 15, py - 15, s2, s2);
-	if (px <= windowWidth - s1 / 2) {
+	if (px >= windowWidth - s1 / 2) {
 		vx = 0;
-	} else if (py <= windowHeight - s1 / 2) {
+	}
+	if (px <= 0 + s1 / 2) {
+		vx = 0;
+	}
+	if (py >= windowHeight - s1 / 2) {
 		vy = 0;
-	} else if (px >= 0 + s1 / 2) {
-		vx = 0;
-	} else if (py >= 0 + s1 / 2) {
+	}
+	if (py <= 0 + s1 / 2) {
 		vy = 0;
 	}
 }
