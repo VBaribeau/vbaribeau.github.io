@@ -2,6 +2,12 @@ var ax, ay, vx, vy, px, py, vMultiplier;
 
 function setup() {
 	createCanvas(windowWidth, windowHeight);
+	ax = 0;
+	ay = 0;
+	vx = 0;
+	vy = 0;
+	px = 0;
+	py = 0;
 }
 
 function draw() {
