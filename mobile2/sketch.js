@@ -6,8 +6,8 @@ function setup() {
 	ay = 0;
 	vx = 0;
 	vy = 0;
-	px = 0;
-	py = 0;
+	px = windowWidth / 2;
+	py = windowHeight / 2;
 }
 
 function draw() {
