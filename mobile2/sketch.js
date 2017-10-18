@@ -16,10 +16,10 @@ function draw() {
 function Marble() {
 	fill(150, 150, 150);
 	vMultiplier = 0.01;
-	ax = rotationY x vMultiplier;
+	ax = rotationY * vMultiplier;
 	vx += ax;
 	px += vx;
-	ay = rotationX x vMultiplier;
+	ay = rotationX * vMultiplier;
 	vy += ay;
 	py += vy;
 	ellipse(px, py, 100, 100);
