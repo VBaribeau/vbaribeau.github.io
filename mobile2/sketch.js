@@ -22,7 +22,6 @@ function draw() {
 	text("Test2.3", 10, 15);
 	text("Rx: " + floor(rotationX), 10, 30);
 	text("Ry: " + floor(rotationY), 10, 45);
-	text("Rz: " + floor(rotationZ), 10, 60);
 	Marble();
 }
 
