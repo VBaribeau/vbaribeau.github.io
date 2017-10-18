@@ -1,4 +1,4 @@
-var ax, ay, vx, vy, px, py, vMultiplier, s;
+var ax, ay, vx, vy, px, py, vMultiplier, s1, s2;
 
 function setup() {
 	createCanvas(windowWidth, windowHeight);
@@ -8,7 +8,8 @@ function setup() {
 	vy = 0;
 	px = windowWidth / 2;
 	py = windowHeight / 2;
-	s = 100;
+	s1 = 100;
+	s2 = 50;
 }
 
 function draw() {
@@ -29,12 +30,12 @@ function Marble() {
 	ay = rotationX * vMultiplier;
 	vy += ay;
 	py += vy;
-	ellipse(px, py, s, s);
+	ellipse(px, py, s1, s1);
 	fill(100);
-	ellipse(px, py, s, s);
-	if (px <= windowWidth - s / 2) {
+	ellipse(px - 15, py - 15, s2, s2);
+	if (px <= windowWidth - s1 / 2) {
 		vx = 0;
-	} else if (py <= windowHeight - s / 2) {
+	} else if (py <= windowHeight - s1 / 2) {
 		vy = 0;
 	}
 }
