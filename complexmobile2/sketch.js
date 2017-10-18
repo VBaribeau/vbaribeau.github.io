@@ -1,4 +1,6 @@
 var s1, ax, ay, vx, vy, px, py;
+var s2, ax2, ay2, vx2, vy2, px2, py2;
+var s3, ax3, ay3, vx3, vy3, px3, py3;
 var value, vMultiplier, g;
 
 function setup() {
@@ -7,6 +9,10 @@ function setup() {
 	ay = 0;
 	vx = 0;
 	vy = 0;
+	ax2 = 0;
+	ay2 = 0;
+	vx2 = 0;
+	vy2 = 0;
 	px = windowWidth / 2;
 	py = windowHeight / 2;
 	s1 = 75;
@@ -24,6 +30,7 @@ function draw() {
 	text("Ry: " + floor(rotationY), 10, 45);
 	text("Rz: " + floor(rotationZ), 10, 60);
 	Marble();
+	Marble2();
 }
 
 function Marble() {
@@ -36,8 +43,6 @@ function Marble() {
 	py += vy;
 	fill(150);
 	ellipse(px, py, s1, s1);
-	fill(100);
-	ellipse(px - s2, py - s2, s1 / 2, s1 / 2);
 	fill(75);
 	ellipse(px + s3, py + s3, s1 / 4, s1 / 4);
 	if (px > windowWidth - s1 / 2) {
