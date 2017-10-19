@@ -28,7 +28,7 @@ function setup() {
 function draw() {
 	background(255, 0, value);
 	textSize(15);
-	text("Test2.3", 10, 15);
+	text("Test2.5", 10, 15);
 	text("Rx: " + floor(rotationX), 10, 30);
 	text("Ry: " + floor(rotationY), 10, 45);
 	Marble();
@@ -67,10 +67,10 @@ function Marble() {
 
 function Marble2() {
 	vMultiplier = 0.05;
-	ax2 = rotationY * vMultiplier;
+	ax2 = ax * vMultiplier;
 	vx2 += ax2;
 	px2 += vx2;
-	ay2 = rotationX * vMultiplier;
+	ay2 = ay * vMultiplier;
 	vy2 += ay2;
 	py2 += vy2;
 
