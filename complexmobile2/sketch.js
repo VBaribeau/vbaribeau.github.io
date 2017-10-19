@@ -21,14 +21,14 @@ function setup() {
 	s1 = 75;
 	s2 = s1 / 6.66;
 	s3 = s1 / 4.2;
-	g = 0.3;
+	g = 0.5;
 	value = 75;
 }
 
 function draw() {
 	background(255, 0, value);
 	textSize(15);
-	text("Test2.6", 10, 15);
+	text("Test2.7", 10, 15);
 	text("Rx: " + floor(rotationX), 10, 30);
 	text("Ry: " + floor(rotationY), 10, 45);
 	Marble();
