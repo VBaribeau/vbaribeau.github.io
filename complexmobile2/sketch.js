@@ -1,5 +1,5 @@
 var s1, ax, ay, vx, vy, px, py;
-var s2, ax2, ay2, vx2, vy2, px2, py2, r2;
+var s2, ax2, ay2, vx2, vy2, px2, py2, r;
 var s3, ax3, ay3, vx3, vy3, px3, py3;
 var value, vMultiplier, g;
 
@@ -76,23 +76,31 @@ function Marble2() {
 
 	fill(100);
 	ellipse(px2 - s2, py2 - s2, s1 / 2, s1 / 2);
-
+	dist(px, py, px2, py2);
+	if (dist(px, py, px2, py2) > r) {
+		px2 = px + r;
+		vx2 = -vx2 * 0, 01;
+		py2 = py + r;
+		vy2 = -vy2 * 0, 01;
+	}
+/*
 	if (px2 > px + r) {
 		px2 = px + r;
-		vx2 = -vx2 * 0,01;
+		vx2 = -vx2 * 0, 01;
 	}
 	if (px2 < px - r) {
 		px2 = px - r;
-		vx2 = -vx2 * 0,01;
+		vx2 = -vx2 * 0, 01;
 	}
 	if (py2 > py + r) {
 		py2 = py + r;
-		vy2 = -vy2 * 0,01;
+		vy2 = -vy2 * 0, 01;
 	}
 	if (py2 < py - r) {
 		py2 = py - r;
-		vy2 = -vy2 * 0,01;
+		vy2 = -vy2 * 0, 01;
 	}
+	*/
 }
 
 
