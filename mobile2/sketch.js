@@ -1,5 +1,5 @@
 var s1, ax, ay, vx, vy, px, py;
-var value, vMultiplier, g;
+var value, vMultiplier, g, r;
 
 function setup() {
 	createCanvas(windowWidth, windowHeight);
@@ -9,15 +9,17 @@ function setup() {
 	vy = 0;
 	px = windowWidth / 2;
 	py = windowHeight / 2;
-	s1 = 75;
+	s1 = 60;
 	s2 = s1 / 6.66;
 	s3 = s1 / 4.2;
-	g = 0.3;
-	value = 75;
+	g = 0.5;
+	r = s1 / 2;
+	value = 0;
 }
 
 function draw() {
-	background(255, 0, value);
+	background(value);
+	fill(0);
 	textSize(15);
 	text("Test2.3", 10, 15);
 	text("Rx: " + floor(rotationX), 10, 30);
@@ -33,11 +35,11 @@ function Marble() {
 	ay = rotationX * vMultiplier;
 	vy += ay;
 	py += vy;
-	fill(150);
+	fill(0, 201, 255);
 	ellipse(px, py, s1, s1);
-	fill(100);
+	fill(0, 255, 128);
 	ellipse(px - s2, py - s2, s1 / 2, s1 / 2);
-	fill(75);
+	fill(33, 190, 111);
 	ellipse(px + s3, py + s3, s1 / 4, s1 / 4);
 	if (px > windowWidth - s1 / 2) {
 		px = windowWidth - s1 / 2;
@@ -57,35 +59,6 @@ function Marble() {
 	}
 }
 
-function Marble2() {
-	vMultiplier = 0.05;
-	ax2 = rotationY * vMultiplier;
-	vx2 += ax2;
-	px2 += vx2;
-	ay2 = rotationX * vMultiplier;
-	vy2 += ay2;
-	py2 += vy2;
-
-	fill(100);
-	ellipse(px2 - s2, py2 - s2, s1 / 2, s1 / 2);
-
-	if (px2 > windowWidth - s1 / 2) {
-		px2 = windowWidth - s1 / 2;
-		vx2 = -vx2 * g;
-	}
-	if (px2 < 0 + s1 / 2) {
-		px2 = 0 + s1 / 2;
-		vx2 = -vx2 * g;
-	}
-	if (py2 > py + s1 / 2) {
-		py2 = py + s1 / 2;
-		vy2 = -vy2 * g;
-	}
-	if (py2 < 0 + s1 / 2) {
-		py2 = 0 + s1 / 2;
-		vy2 = -vy2 * g;
-	}
-}
 
 
 
@@ -93,6 +66,6 @@ function Marble2() {
 function deviceShaken() {
 	value = value + 1;
 	if (value > 255) {
-		value = 75;
+		value = 0;
 	}
 }
