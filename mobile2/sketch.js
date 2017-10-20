@@ -4,7 +4,7 @@ var maxStars = 50;
 //***************************************************
 
 var s1, ax, ay, vx, vy, px, py;
-var b, w, vMultiplier, g, r;
+var b, w, vMultiplier, g, r,u,d;
 
 function setup() {
 	createCanvas(windowWidth, windowHeight);

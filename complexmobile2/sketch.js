@@ -22,7 +22,7 @@ function setup() {
 	s2 = s1 / 6.66;
 	s3 = s1 / 4.2;
 	g = 0.5;
-	value = 75;
+	value = 0;
 }
 
 function draw() {
@@ -109,6 +109,6 @@ function Marble2() {
 function deviceShaken() {
 	value = value + 1;
 	if (value > 255) {
-		value = 75;
+		value = 0;
 	}
 }
