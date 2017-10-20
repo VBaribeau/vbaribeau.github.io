@@ -76,29 +76,31 @@ function Marble2() {
 	fill(100);
 	ellipse(px2, py2, s1 / 2, s1 / 2);
 	if (dist(px, py, px2, py2) > r) {
-		px2 = px + r;
-		vx2 = -vx2 * 0, 01;
-		py2 = py + r;
-		vy2 = -vy2 * 0, 01;
+		px2 = px;
+		py2 = py;
+		//		px2 = px + r;
+		//		vx2 = -vx2 * 0, 01;
+		//		py2 = py + r;
+		//		vy2 = -vy2 * 0, 01;
 	}
-/*
-	if (px2 > px + r) {
-		px2 = px + r;
-		vx2 = -vx2 * 0, 01;
-	}
-	if (px2 < px - r) {
-		px2 = px - r;
-		vx2 = -vx2 * 0, 01;
-	}
-	if (py2 > py + r) {
-		py2 = py + r;
-		vy2 = -vy2 * 0, 01;
-	}
-	if (py2 < py - r) {
-		py2 = py - r;
-		vy2 = -vy2 * 0, 01;
-	}
-	*/
+	/*
+		if (px2 > px + r) {
+			px2 = px + r;
+			vx2 = -vx2 * 0, 01;
+		}
+		if (px2 < px - r) {
+			px2 = px - r;
+			vx2 = -vx2 * 0, 01;
+		}
+		if (py2 > py + r) {
+			py2 = py + r;
+			vy2 = -vy2 * 0, 01;
+		}
+		if (py2 < py - r) {
+			py2 = py - r;
+			vy2 = -vy2 * 0, 01;
+		}
+		*/
 }
 
 
