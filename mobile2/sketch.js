@@ -1,8 +1,19 @@
+//***************************************************
+var balls = [];
+var maxBalls;
+//***************************************************
+
 var s1, ax, ay, vx, vy, px, py;
 var b, w, vMultiplier, g, r;
 
 function setup() {
 	createCanvas(windowWidth, windowHeight);
+	//***************************************************
+	maxBalls = 100;
+	for (var i = 0; i < maxBalls; i++) {
+		balls[i] = new Ball();
+	}
+	//***************************************************
 	ax = 0;
 	ay = 0;
 	vx = 0;
@@ -20,9 +31,11 @@ function setup() {
 
 function draw() {
 	background(b);
+	//***************************************************
+	//***************************************************
 	fill(w);
 	textSize(15);
-	text("Final2.5", 10, 15);
+	text("Final2.5.5", 10, 15);
 	text("Rx: " + floor(rotationX), 10, 30);
 	text("Ry: " + floor(rotationY), 10, 45);
 	Marble();
@@ -63,7 +76,7 @@ function Marble() {
 
 
 
-
+//***************************************************
 function deviceShaken() {
 	b = b + 2;
 	if (b >= 255) {
@@ -74,3 +87,16 @@ function deviceShaken() {
 		w = 255;
 	}
 }
+//***************************************************
+function Ball() {
+  this.couleur = w;
+  this.posx = random(0, windowWidth);
+  this.posy = random(0, windowHeight);
+  this.taille = random(5,10);
+  ellipse(this.posx, this.posy, this.taille, this.taille);
+ }
+//***************************************************
+function windowResized() {
+ resizeCanvas(windowWidth, windowHeight);
+}
+//***************************************************
