@@ -9,7 +9,7 @@ function setup() {
 	vy = 0;
 	px = windowWidth / 2;
 	py = windowHeight / 2;
-	s1 = 60;
+	s1 = 70;
 	s2 = s1 / 6.66;
 	s3 = s1 / 4.2;
 	g = 0.7;
@@ -22,7 +22,7 @@ function draw() {
 	background(b);
 	fill(w);
 	textSize(15);
-	text("Final", 10, 15);
+	text("Final2.0", 10, 15);
 	text("Rx: " + floor(rotationX), 10, 30);
 	text("Ry: " + floor(rotationY), 10, 45);
 	Marble();
