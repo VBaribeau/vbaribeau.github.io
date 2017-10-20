@@ -1,5 +1,5 @@
 var s1, ax, ay, vx, vy, px, py;
-var value, vMultiplier, g, r;
+var b, w, vMultiplier, g, r;
 
 function setup() {
 	createCanvas(windowWidth, windowHeight);
@@ -14,12 +14,13 @@ function setup() {
 	s3 = s1 / 4.2;
 	g = 0.5;
 	r = s1 / 2;
-	value = 0;
+	b = 0;
+	w = 255;
 }
 
 function draw() {
-	background(value);
-	fill(0);
+	background(b);
+	fill(w);
 	textSize(15);
 	text("Test2.3", 10, 15);
 	text("Rx: " + floor(rotationX), 10, 30);
@@ -64,8 +65,12 @@ function Marble() {
 
 
 function deviceShaken() {
-	value = value + 1;
-	if (value > 255) {
-		value = 0;
+	b = b + 5;
+	if (b === 255) {
+		b = 0;
+	}
+	w = w - 5;
+	if (w === 0) {
+		w = 255;
 	}
 }
