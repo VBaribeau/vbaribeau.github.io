@@ -26,9 +26,9 @@ function setup() {
 }
 
 function draw() {
-	background(255, 0, value);
+	background(value);
 	textSize(15);
-	text("Test3", 10, 15);
+	text("Test3.1", 10, 15);
 	text("Rx: " + floor(rotationX), 10, 30);
 	text("Ry: " + floor(rotationY), 10, 45);
 	Marble();
