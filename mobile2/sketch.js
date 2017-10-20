@@ -31,7 +31,7 @@ function draw() {
 	background(b);
 	//***************************************************
 	for (var i = 0; i < maxStars; i++) {
-		drawStar(stars[i].X, stars[i].Y, stars[i].size, stars[i].r, stars[i].g, stars[i].b);
+		drawStar(stars[i].X, stars[i].Y, stars[i].size);
 	}
 
 	//***************************************************
@@ -99,13 +99,10 @@ function Star() {
 	this.size = random(5, 10);
 	this.X = random(0 + this.size / 2, windowWidth - this.size / 2);
 	this.Y = random(0 + this.size / 2, windowHeight - this.size / 2);
-	this.r = w;
-	this.g = w;
-	this.b = w;
 }
 //*******************************
-function drawStar(x, y, s, r, g, b) {
-	fill(r, b, g);
+function drawStar(x, y, s) {
+	fill(w);
 	ellipse(x, y, s, s);
 }
 //******************************************************************************
