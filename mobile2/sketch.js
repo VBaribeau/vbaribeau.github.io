@@ -32,6 +32,9 @@ function setup() {
 function draw() {
 	background(b);
 	//***************************************************
+	for (var i = 0; i < maxBalls; i++) {
+		balls[i] = new Ball();
+	}
 	//***************************************************
 	fill(w);
 	textSize(15);
@@ -89,14 +92,14 @@ function deviceShaken() {
 }
 //***************************************************
 function Ball() {
-  this.couleur = w;
-  this.posx = random(0, windowWidth);
-  this.posy = random(0, windowHeight);
-  this.taille = random(5,10);
-  ellipse(this.posx, this.posy, this.taille, this.taille);
- }
+	this.couleur = w;
+	this.posx = random(0, windowWidth);
+	this.posy = random(0, windowHeight);
+	this.taille = random(5, 10);
+	ellipse(this.posx, this.posy, this.taille, this.taille);
+}
 //***************************************************
 function windowResized() {
- resizeCanvas(windowWidth, windowHeight);
+	resizeCanvas(windowWidth, windowHeight);
 }
 //***************************************************
