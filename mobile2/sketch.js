@@ -29,7 +29,7 @@ function draw() {
 }
 
 function Marble() {
-	vMultiplier = 0.02;
+	vMultiplier = 0.01;
 	ax = rotationY * vMultiplier;
 	vx += ax;
 	px += vx;
@@ -65,11 +65,11 @@ function Marble() {
 
 
 function deviceShaken() {
-	b = b + 5;
+	b = b + 2;
 	if (b === 255) {
 		b = 0;
 	}
-	w = w - 5;
+	w = w - 2;
 	if (w === 0) {
 		w = 255;
 	}
