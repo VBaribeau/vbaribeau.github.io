@@ -12,7 +12,7 @@ function setup() {
 	s1 = 70;
 	s2 = s1 / 6.66;
 	s3 = s1 / 4.2;
-	g = 0.7;
+	g = 0.5;
 	r = s1 / 2;
 	b = 0;
 	w = 255;
@@ -22,7 +22,7 @@ function draw() {
 	background(b);
 	fill(w);
 	textSize(15);
-	text("Final2.0", 10, 15);
+	text("Final2.5", 10, 15);
 	text("Rx: " + floor(rotationX), 10, 30);
 	text("Ry: " + floor(rotationY), 10, 45);
 	Marble();
@@ -66,11 +66,11 @@ function Marble() {
 
 function deviceShaken() {
 	b = b + 2;
-	if (b === 255) {
+	if (b >= 255) {
 		b = 0;
 	}
 	w = w - 2;
-	if (w === 0) {
+	if (w <= 0) {
 		w = 255;
 	}
 }
