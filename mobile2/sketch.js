@@ -1,6 +1,6 @@
 //***************************************************
-var Stars = 10;
-var sx, sy, ss;
+var stars = [];
+var maxStars = 50;
 //***************************************************
 
 var s1, ax, ay, vx, vy, px, py;
@@ -8,11 +8,6 @@ var b, w, vMultiplier, g, r;
 
 function setup() {
 	createCanvas(windowWidth, windowHeight);
-	//***************************************************
-	sx = random(0, windowWidth);
-	sy = random(0, windowHeight);
-	ss = random(5, 10);
-	//***************************************************
 	ax = 0;
 	ay = 0;
 	vx = 0;
@@ -26,17 +21,19 @@ function setup() {
 	r = s1 / 2;
 	b = 0;
 	w = 255;
+	for (var i = 0; i < maxStars; i++) {
+		stars[i] = new Star;
+	}
+
 }
 
 function draw() {
 	background(b);
 	//***************************************************
-	for (var i = 0; i < Stars; i++) {
-		sx = random(0, windowWidth);
-		sy = random(0, windowHeight);
-		ss = random(5, 10);
-		Star(sx,sy,ss,w);
+	for (var i = 0; i < maxStars; i++) {
+		drawStar(stars[i].X, stars[i].Y, stars[i].size, stars[i].r, stars[i].g, stars[i].b);
 	}
+
 	//***************************************************
 	fill(w);
 	textSize(15);
@@ -83,26 +80,32 @@ function Marble() {
 
 //***************************************************
 function deviceShaken() {
-	b = b + 2;
-	if (b >= 305) {
+	b = b + 1;
+	if (b >= 255) {
 		b = 0;
 	}
-	w = w - 2;
-	if (w <= -50) {
+	w = w - 1;
+	if (w <= 0) {
 		w = 255;
 	}
 }
 //***************************************************
-function Star(x,y,s,c){
-			drawStar(x, y, s, c);
-}
-function drawStar(x, y, d, c) {
-	fill(c, c, c);
-	ellipse(x, y, d, d);
-}
-
 //***************************************************
 function windowResized() {
 	resizeCanvas(windowWidth, windowHeight);
 }
 //***************************************************
+function Star() {
+	this.size = random(5, 10);
+	this.X = random(0 + this.size / 2, windowWidth - this.size / 2);
+	this.Y = random(0 + this.size / 2, windowHeight - this.size / 2);
+	this.r = w;
+	this.g = w;
+	this.b = w;
+}
+//*******************************
+function drawStar(x, y, s, r, g, b) {
+	fill(r, b, g);
+	ellipse(x, y, s, s);
+}
+//******************************************************************************
