@@ -1,6 +1,6 @@
 //***************************************************
-var balls = [];
-var maxBalls;
+var Stars = 10;
+var sx, sy, ss;
 //***************************************************
 
 var s1, ax, ay, vx, vy, px, py;
@@ -9,10 +9,9 @@ var b, w, vMultiplier, g, r;
 function setup() {
 	createCanvas(windowWidth, windowHeight);
 	//***************************************************
-	maxBalls = 100;
-	for (var i = 0; i < maxBalls; i++) {
-		balls[i] = new Ball();
-	}
+	sx = random(0, windowWidth);
+	sy = random(0, windowHeight);
+	ss = random(5, 10);
 	//***************************************************
 	ax = 0;
 	ay = 0;
@@ -32,8 +31,11 @@ function setup() {
 function draw() {
 	background(b);
 	//***************************************************
-	for (var i = 0; i < maxBalls; i++) {
-		balls[i] = new Ball();
+	for (var i = 0; i < Stars; i++) {
+		sx = random(0, windowWidth);
+		sy = random(0, windowHeight);
+		ss = random(5, 10);
+		Star(sx,sy,ss,w);
 	}
 	//***************************************************
 	fill(w);
@@ -91,13 +93,14 @@ function deviceShaken() {
 	}
 }
 //***************************************************
-function Ball() {
-	this.couleur = w;
-	this.posx = random(0, windowWidth);
-	this.posy = random(0, windowHeight);
-	this.taille = random(5, 10);
-	ellipse(this.posx, this.posy, this.taille, this.taille);
+function Star(x,y,s,c){
+			drawStar(x, y, s, c);
 }
+function drawStar(x, y, d, c) {
+	fill(c, c, c);
+	ellipse(x, y, d, d);
+}
+
 //***************************************************
 function windowResized() {
 	resizeCanvas(windowWidth, windowHeight);
