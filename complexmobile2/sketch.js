@@ -28,7 +28,7 @@ function setup() {
 function draw() {
 	background(255, 0, value);
 	textSize(15);
-	text("Test2.7", 10, 15);
+	text("Test3", 10, 15);
 	text("Rx: " + floor(rotationX), 10, 30);
 	text("Ry: " + floor(rotationY), 10, 45);
 	Marble();
@@ -75,7 +75,6 @@ function Marble2() {
 
 	fill(100);
 	ellipse(px2, py2, s1 / 2, s1 / 2);
-	dist(px, py, px2, py2);
 	if (dist(px, py, px2, py2) > r) {
 		px2 = px + r;
 		vx2 = -vx2 * 0, 01;
