@@ -37,7 +37,7 @@ function draw() {
 	//***************************************************
 	fill(w);
 	textSize(15);
-	text("Final2.5.5", 10, 15);
+	text("-Final-", 10, 15);
 	text("Rx: " + floor(rotationX), 10, 30);
 	text("Ry: " + floor(rotationY), 10, 45);
 	Marble();
