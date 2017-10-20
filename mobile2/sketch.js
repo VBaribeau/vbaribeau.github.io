@@ -4,7 +4,7 @@ var maxStars = 50;
 //***************************************************
 
 var s1, ax, ay, vx, vy, px, py;
-var b, w, vMultiplier, g, r, u, d;
+var b, w, vMultiplier, g, r, u, d, check1, check2;
 
 function setup() {
 	createCanvas(windowWidth, windowHeight);
@@ -24,6 +24,8 @@ function setup() {
 	w = 254;
 	u = 1;
 	d = 1;
+	check1 = false;
+	check2 = false;
 	for (var i = 0; i < maxStars; i++) {
 		stars[i] = new Star;
 	}
@@ -32,6 +34,7 @@ function setup() {
 
 function draw() {
 	background(b);
+	Ifs();
 	//***************************************************
 	for (var i = 0; i < maxStars; i++) {
 		drawStar(stars[i].X, stars[i].Y, stars[i].size);
@@ -40,7 +43,7 @@ function draw() {
 	//***************************************************
 	fill(w);
 	textSize(15);
-	text("-Final!-", 10, 15);
+	text("-!Final!-", 10, 15);
 	text("Rx: " + floor(rotationX), 10, 30);
 	text("Ry: " + floor(rotationY), 10, 45);
 	Marble();
@@ -85,31 +88,31 @@ function Marble() {
 function deviceShaken() {
 	b = b + u;
 	if (b >= 255) {
-		b === true;
+		check1 === true;
 	}
 	if (b <= 0) {
-		b === false;
+		check1 === false;
 	}
 	w = w + d;
 	if (w <= 0) {
-		w === true;
+		check2 === true;
 	}
 	if (w >= 255) {
-		w === false;
+		check2 === false;
 	}
 }
 //***************************************************
 function Ifs() {
-	if (b === true) {
+	if (check1 === true) {
 		u = -1;
 	}
-	if (w === true) {
+	if (check2 === true) {
 		d = -1;
 	}
-	if (b === false) {
+	if (check1 === false) {
 		u = 1;
 	}
-	if (w === false) {
+	if (check2 === false) {
 		d = 1;
 	}
 }
