@@ -12,7 +12,7 @@ function setup() {
 	s1 = 60;
 	s2 = s1 / 6.66;
 	s3 = s1 / 4.2;
-	g = 0.5;
+	g = 0.7;
 	r = s1 / 2;
 	b = 0;
 	w = 255;
@@ -22,7 +22,7 @@ function draw() {
 	background(b);
 	fill(w);
 	textSize(15);
-	text("Test2.3", 10, 15);
+	text("Final", 10, 15);
 	text("Rx: " + floor(rotationX), 10, 30);
 	text("Ry: " + floor(rotationY), 10, 45);
 	Marble();
