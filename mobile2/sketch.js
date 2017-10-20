@@ -29,7 +29,7 @@ function draw() {
 }
 
 function Marble() {
-	vMultiplier = 0.05;
+	vMultiplier = 0.02;
 	ax = rotationY * vMultiplier;
 	vx += ax;
 	px += vx;
