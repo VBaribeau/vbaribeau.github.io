@@ -8,6 +8,7 @@ var b, w, vMultiplier, g, r;
 
 function setup() {
 	createCanvas(windowWidth, windowHeight);
+	noStroke();
 	ax = 0;
 	ay = 0;
 	vx = 0;
