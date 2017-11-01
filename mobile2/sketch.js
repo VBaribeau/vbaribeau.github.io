@@ -3,7 +3,7 @@ var stars = [];
 var maxStars = 50;
 //***************************************************
 var s1, ax, ay, vx, vy, px, py;
-var b, w, vMultiplier, g, r;
+var b, w, c, vMultiplier, g, r;
 //***************************************************
 function setup() {
 	createCanvas(windowWidth, windowHeight);
@@ -20,7 +20,8 @@ function setup() {
 	g = 0.5;
 	r = s1 / 2;
 	b = 1;
-	w = 254;
+	w = 255;
+	c = 1;
 	for (var i = 0; i < maxStars; i++) {
 		stars[i] = new Star();
 	}
@@ -35,7 +36,7 @@ function draw() {
 	//***************************************************
 	fill(w);
 	textSize(15);
-	text("Finale", 10, 15);
+	text("FinaleSwitch", 10, 15);
 	text("Rx: " + floor(rotationX), 10, 30);
 	text("Ry: " + floor(rotationY), 10, 45);
 	Marble();
@@ -74,14 +75,11 @@ function Marble() {
 }
 //***************************************************
 function deviceShaken() {
-	b = b + 1;
-	if (b >= 255) {
-		b = 0;
+	b = b + c;
+	if (b >= 255 || b <= 0) {
+		c = -c;
 	}
-	w = w - 1;
-	if (w <= 0) {
-		w = 255
-	}
+	w = 255 - b;
 }
 //***************************************************
 function windowResized() {
